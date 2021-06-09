@@ -1,0 +1,26 @@
+body {
+  padding-top: 3.5rem;
+}
+main {
+  padding-bottom: 3.5rem;
+}
+
+h1 {
+  padding-bottom: 9px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.navbar-main {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+.footer-main {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: #ffffff;
+  clear: both;
+  font-size: 1em;
+  margin-top: 1.5em;
+  padding: 1em;
+  padding-bottom: 2em;
+  min-height: 1em;
+}
