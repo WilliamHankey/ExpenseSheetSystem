@@ -11,8 +11,17 @@ class CurrencyConverterServiceSpec extends Specification implements ServiceUnitT
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+     void testConvertCurrency() {
+        given: 'a user'
+        def user = new User(name: "Test", initialBankBalance: 1000)
+        def expense1 = new Expense(description: "rent", amount: 300, user: user)
+        def expense2 = new Expense(description: "food", amount: 300, user: user)
+
+        when: 'service is called'
+        def convertedAmount1 = service.convertRandToUSD(expense1.amount)
+
+        then: 'a USD equivalent must be returned'
+        assert convertedAmount1 > 0.0
+
     }
 }
