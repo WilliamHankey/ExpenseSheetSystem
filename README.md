@@ -2,6 +2,10 @@
 
  A grails website that tracks your expenses
  
+ ## what you will need
+
+JDK 1.7 or greater installed with `JAVA_HOME` configured appropriately
+ 
  ## Running the app
 
  ```
@@ -33,3 +37,7 @@ Tests are run with the  [test-app](https://docs.grails.org/latest/ref/Command%20
 ```
 ./grailsw test-app
 ```
+
+## Possible optimisations 
+
+Authentication, authorization, a register page and interceptors can be added to improve that website.
